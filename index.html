@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Alstar - Bootstrap one page parallax template</title>
+  <title>Escola Diaconal Santo Estêvão :: Jubileu de Prata ::</title>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- css -->
@@ -22,6 +22,26 @@
 
 <body>
 
+  <!--Movimentação do título-->
+  <script> var repeat=0 // 0 para rolar uma vez, 1 para rolar infinitamente
+    var title=document.title+" "
+    var leng=title.length
+    var start=1
+    function titlemove() {
+      titl=title.substring(start, leng) + title.substring(0, start)
+      document.title=titl
+      start++
+        if (start==leng+1) {
+          start=0
+        if (repeat==0)
+          return
+        }
+      setTimeout("titlemove()",300)  // aqui vc pode aumentar ou diminuir a velocidade
+    }
+    if (document.title)
+      titlemove()
+  </script>
+
   <!-- Navigation -->
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -34,16 +54,16 @@
         </button>
 
         <!-- Logo text or image -->
-        <a class="navbar-brand" href="index.html">Alstar</a>
+        <a class="navbar-brand" href="index.html">Jubileu de Prata</a>
 
       </div>
       <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li class="current"><a href="#intro">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#portfolio">Works</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#about">Histórico</a></li>
+          <li><a href="#service">Comemorações</a></li>
+          <li><a href="#portfolio">Simpósio Diaconal</a></li>
+          <li><a href="#team">Pessoas</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -62,21 +82,21 @@
             <div class="carousel-background"><img src="img/intro/1.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animated fadeInDown">Alstar web studio</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
+                <h2 class="animated fadeInDown">Bem vindos!</h2>
+                <p class="animated fadeInUp">A Escola Diaconal Santo Estevam da Arquidiocese de Natal está comemorando em 2020 o seu <text style="strong">Jubileu de Prata</text> de fundação, serviço e missão. Vamos comemorar!</p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Breve Histórico</a>
               </div>
             </div>
           </div>
-          
+
           <!-- Slide 2 -->
           <div class="item">
             <div class="carousel-background"><img src="img/intro/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animated fadeInDown">Creativity and technology</span></h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
+                <h2 class="animated fadeInDown"></span></h2>
+                <p class="animated fadeInUp"></p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Tema</a>
               </div>
             </div>
           </div>
@@ -88,7 +108,7 @@
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</span></h2>
                 <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
+                <a href="#about" class="btn-get-started animated fadeInUp">Breve Histórico</a>
               </div>
             </div>
           </div>
